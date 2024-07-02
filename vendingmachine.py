@@ -80,9 +80,9 @@ class VendingMachine:
         change_dict = self.calcChange(amount_paid, total_amt)
         
         # print change
-        print(f"Total amount paid: RM {amount_paid:.2f}")
-        print(f"Change: RM {change:.2f}")
-        print("Note(s) returned:")
+        print(f'Total amount paid: RM {amount_paid:.2f}')
+        print(f'Change: RM {change:.2f}')
+        print('Note(s) returned:')
         for note, count in change_dict.items():
             print(f"RM {note}: {count} note{'s' if count > 1 else ''}")
         
